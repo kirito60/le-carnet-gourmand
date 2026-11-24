@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f6f7fb;
+    color: #111827;
+    font-family: system-ui, -apple-system, "segoe ui", roboto, arial, sans-serif;
+    font-size: 14px;
+}
+
+header {
+    max-width: 1050px; 
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.title h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.title h2 {
+    font-size: 14px;
+    margin: 0;
+    font-weight: normal;
+    color: #6b7280;
+}
+
+.logo {
+    font-size: 32px;
+}
+
+.main {
+    max-width: 1050px; 
+    margin: 0 auto;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    align-items: start;
+}
+
+.colone1,
+.colone2 {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.contenu-recette {
+    background-color: #fafafa;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 14px;
+}
+
+.recette p {
+    color: #6b7280;
+}
+
+.recette h2 {
+    margin-top: 0;
+}
+
+.formulaire h3  {
+    margin-top: 0;
+}
+
+#formulaire {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#formulaire input,
+#formulaire textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+#formulaire small {
+    color: #6b7280;
+    margin-bottom: 8px;
+}
+
+#formulaire button {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.commentaires {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 12px;
+}
+
+.commentaires h4 {
+    margin-top: 0;
+}
+
+.commentaires p {
+    margin: 8px 0;
+}
+
+.supprimer {
+    background-color: #FFFFFF;
+    color: #dc2626;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.commentaire {
+    position: relative;
+}
+
+.supprimer {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+}
+
+#erreur {
+    background-color: #fee2e2;
+    color: #dc2626;
+    padding: 10px;
+    border-radius: 12px;
+    margin: 0;
+    display: none;
+}
+
+footer {
+    max-width: 1050px; 
+    margin: 0 auto;
+    padding: 16px;
+    text-align: center;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+@media (max-width: 900px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+}
